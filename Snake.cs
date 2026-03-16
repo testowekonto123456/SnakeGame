@@ -129,7 +129,7 @@ class Program
 
             {
 
-                Console.SetCursorPosition(telje[i], telje[i + 1]);
+                Console.SetCursorPosition(teljePositie[i], teljePositie[i + 1]);
 
                 Console.Write("■");
 
