@@ -265,7 +265,7 @@ class Program
 
                     Console.SetCursorPosition(screenwidth / 5, screenheight / 2);
 
-                   //???
+                    Console.WriteLine("Game Over");
 
                     Console.SetCursorPosition(screenwidth / 5, screenheight / 2 + 1);
 
