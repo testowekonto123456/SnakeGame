@@ -21,8 +21,6 @@ class Program
 
         Random randomnummer = new Random();
 
-        List<int> telje = new List<int>();
-
         int score = 0;
 
         Pixel hoofd = new Pixel();
