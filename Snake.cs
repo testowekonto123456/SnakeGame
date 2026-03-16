@@ -154,41 +154,30 @@ class Program
             Console.Write("■");
 
 
+if (Console.KeyAvailable)
+{
+    ConsoleKeyInfo info = Console.ReadKey(true);
 
-            ConsoleKeyInfo info = Console.ReadKey();
+    switch (info.Key)
+    {
+        case ConsoleKey.UpArrow:
+            movement = "UP";
+            break;
 
-            //Game Logic
+        case ConsoleKey.DownArrow:
+            movement = "DOWN";
+            break;
 
-            switch (info.Key)
+        case ConsoleKey.LeftArrow:
+            movement = "LEFT";
+            break;
 
-            {
-
-                case ConsoleKey.UpArrow:
-
-                    movement = "UP";
-
-                    break;
-
-                case ConsoleKey.DownArrow:
-
-                    movement = "DOWN";
-
-                    break;
-
-                case ConsoleKey.LeftArrow:
-
-                    movement = "LEFT";
-
-                    break;
-
-                case ConsoleKey.RightArrow:
-
-                    movement = "RIGHT";
-
-                    break;
-
-            }
-
+        case ConsoleKey.RightArrow:
+            movement = "RIGHT";
+            break;
+    }
+}
+     
             if (movement == "UP")
 
                 hoofd.yPos--;
