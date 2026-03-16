@@ -21,8 +21,6 @@ class Program
 
         Random randomnummer = new Random();
 
-        List<int> telje = new List<int>();
-
         int score = 0;
 
         Pixel hoofd = new Pixel();
@@ -119,7 +117,7 @@ class Program
 
             }
 
-            Console.ForegroundColor =  /* ?? */;
+            Console.ForegroundColor = ConsoleColor.White;
 
             Console.WriteLine("Score: " + score);
 
@@ -175,7 +173,7 @@ class Program
 
                     movement = "DOWN";
 
-                    // ???
+                    break;
 
                 case ConsoleKey.LeftArrow:
 
@@ -209,7 +207,7 @@ class Program
 
             //Hindernis treffen
 
-            if (hoofd.xPos == obstacleXpos /* ?? */ == obstacleYpos)
+            if (hoofd.xPos == obstacleXpos && hoofd.yPos == obstacleYpos)
 
             {
 
